@@ -18,7 +18,7 @@ const style = {
   title: {
     position: "relative",
     fontSize: 50,
-    left: "900px",
+    left: "1000px",
     bottom: "80px",
     color: "#85144b",
     fontWeight: 400,
