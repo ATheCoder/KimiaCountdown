@@ -18,10 +18,11 @@ const style = {
   title: {
     position: "relative",
     fontSize: 50,
-    left: "1100px",
+    left: "900px",
     bottom: "80px",
     color: "#85144b",
-    fontWeight: 700
+    fontWeight: 400,
+    width: "600px"
   }
 }
 
