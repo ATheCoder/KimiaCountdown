@@ -2,28 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from "./components/Counter"
+import Title from "./components/Title"
 
 function App() {
   return (
     <div>
       <Counter></Counter>
-      <div style={style.title}>
-        Until Kimia reaches Tehran
-      </div>
+      <Title></Title>
     </div>
   );
 }
 
-const style = {
-  title: {
-    position: "relative",
-    fontSize: 50,
-    left: "1000px",
-    bottom: "80px",
-    color: "#85144b",
-    fontWeight: 400,
-    width: "600px"
-  }
-}
 
 export default App;
