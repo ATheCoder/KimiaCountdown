@@ -5,7 +5,8 @@ class NumberWithLabel extends React.Component {
     render() {
         return (
             <div style={style.container}>
-                <div style={{...style.number, transform: this.props.shouldAnimate ? (this.props.plus ? "scale(1.1)" : "rotate(0deg)") : ""}}>
+                <div style={{...style.number, transform: this.props.shouldAnimate ? (this.props.plus ? "scale(1.1)" : "rotate(0deg)") : "",
+                    color: this.props.isRed ? "#FF0000" : "#F012BE"}}>
                     {this.props.number}
                 </div>
                 <div style={style.label}>
@@ -27,7 +28,9 @@ const style = {
         height: 160,
         textAlign: 'center',
         color: "#F012BE",
-        transition: '150ms'
+        transition: 'transform 150ms',
+        position: 'relative',
+        zIndex: 1000
     },
     label: {
         fontSize: 30,
@@ -35,7 +38,9 @@ const style = {
         display: "inline",
         left: "100px",
         bottom: "30px",
-        color: "#DDDDDD"
+        color: "#DDDDDD",
+        position: 'relative',
+        zIndex: 1000
     }
 }
 

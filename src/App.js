@@ -7,6 +7,8 @@ import Title from "./components/Title"
 function App() {
   return (
     <div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
       <Counter></Counter>
       <Title></Title>
     </div>

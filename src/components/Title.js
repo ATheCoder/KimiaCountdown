@@ -28,7 +28,9 @@ const style = {
       color: "#85144b",
       fontWeight: 400,
       width: "600px",
-      transition: "1000ms"
+      transition: "1000ms",
+      position: 'relative',
+      zIndex: 1000
     }
   }
 
