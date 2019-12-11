@@ -1,5 +1,6 @@
 import React from "react"
 import NumberWithLabel from "./NumberWithLabel"
+import convertSeconds from "../utils/convertSeconds"
 
 class Counter extends React.Component {
     constructor(props){
@@ -35,23 +36,6 @@ class Counter extends React.Component {
             </div>
         )
     }
-}
-
-
-let convertSeconds = ( seconds ) => {
-    let day, hour, minute;
-    minute = Math.floor(seconds / 60);
-    seconds = seconds % 60;
-    hour = Math.floor(minute / 60);
-    minute = minute % 60;
-    day = Math.floor(hour / 24);
-    hour = hour % 24;
-    return {
-        day: day,
-        hour: hour,
-        minute: minute,
-        seconds: seconds
-    };
 }
 
 export default Counter
